@@ -10,8 +10,7 @@ def determine_os_path(_platform=None):
     if not _platform:
         _platform = sys.platform
     if _platform.startswith('win'):
-        result = "\\"
-        return result
+        return "\\"
     else:
         return '/'
 
